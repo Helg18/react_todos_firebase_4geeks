@@ -12,18 +12,16 @@ class ListNotes extends Component{
 
         return arr.map((nota, i) => {
             return (
-                <div className="col-4 mb-4" key={i}>
-                    <div className="card">
-                        <div className='card-header'>
-                            Nota #{i+1}
-                        </div>
-                        <div className="card-body">
-                            <span>{nota.description}</span>
-                        </div>
-                        <div className="card-footer">
-                            <button className="btn btn-outline-danger m-1">Eliminar</button>
-                            <button className="btn btn-outline-primary m-1">Modificar</button>
-                        </div>
+                <div className="card mb-3" key={i}>
+                    <div className='card-header'>
+                        Nota #{i+1}
+                    </div>
+                    <div className="card-body">
+                        <span>{nota.description}</span>
+                    </div>
+                    <div className="card-footer">
+                        <button className="btn btn-outline-danger m-1">Eliminar</button>
+                        <button className="btn btn-outline-primary m-1">Modificar</button>
                     </div>
                 </div>
             )}
@@ -34,9 +32,9 @@ class ListNotes extends Component{
     render() {
         const html = this.getListHtml(this.props.notes);
         return (
-                <div className='row m-1'>
-                    {html}
-                </div>
+            <div>
+                {html}
+            </div>
         );
     };
 }

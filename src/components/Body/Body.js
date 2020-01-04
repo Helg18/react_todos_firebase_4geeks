@@ -13,7 +13,10 @@ class Body extends Component {
                 {notaID:1, description: "Este es el cuerpo de mi nota"},
                 {notaID:2, description: "Este es el cuerpo de mi nota"},
                 {notaID:3, description: "Este es el cuerpo de mi nota"},
-                {notaID:4, description: "Este es el cuerpo de mi nota"}
+                {notaID:4, description: "Este es el cuerpo de mi nota"},
+                {notaID:5, description: "Este es el cuerpo de mi nota"},
+                {notaID:6, description: "Este es el cuerpo de mi nota"},
+                {notaID:7, description: "Este es el cuerpo de mi nota"}
             ]
         }
     }
@@ -22,13 +25,11 @@ class Body extends Component {
         return (
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-4">
+                    <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4">
                         <NewNote></NewNote>
                     </div>
-                    <div className="col-8">
-                        <div className="row">
-                            <ListNotes notes={this.state.notas}></ListNotes>
-                        </div>
+                    <div className="col-sm-12 col-md-6 col-lg-8 col-xl-8">
+                        <ListNotes notes={this.state.notas}></ListNotes>
                     </div>
                 </div>
             </div>
