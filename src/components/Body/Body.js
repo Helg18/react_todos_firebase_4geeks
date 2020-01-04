@@ -23,12 +23,12 @@ class Body extends Component {
 
     render() {
         return (
-            <div className="container-fluid">
+            <div className="container">
                 <div className="row">
-                    <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3">
                         <NewNote></NewNote>
                     </div>
-                    <div className="col-sm-12 col-md-6 col-lg-8 col-xl-8">
+                    <div className="col-sm-12 col-md-6 col-lg-9 col-xl-9">
                         <ListNotes notes={this.state.notas}></ListNotes>
                     </div>
                 </div>
