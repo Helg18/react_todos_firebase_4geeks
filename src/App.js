@@ -9,14 +9,16 @@ import Body from "./components/Body/Body";
 // styles
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-        <Header></Header>
-        <Body></Body>
-        <Footer></Footer>
-    </div>
-  );
+class App extends React.Component {
+    render() {
+        return (
+            <div className="App">
+                <Header></Header>
+                <Body></Body>
+                <Footer></Footer>
+            </div>
+        );
+    }
 }
 
 export default App;
